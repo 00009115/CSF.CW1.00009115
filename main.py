@@ -53,10 +53,19 @@ print("I am going to reach " + countries["France"]["capital"] + " on " + days[3]
 isDayOff = [True, True, True, True, True, False, False]
 
 week = zip(days, isDayOff)
-print(dict(week))
+print(tuple(week))
 
 # zipped data can be displayed in different ways:
 # print(list(week))   # displays as a list of tuples
 # print(tuple(week))  # displays as a tuple of tuples
 # print(dict(week))   # displays as a dictionary
 
+
+#########
+
+# enumerate() is used to numerate the items of either list or tuple.
+# Starting number can be assigned as a second argument.
+week = enumerate(days, 1)
+print(tuple(week))
+
+# enumerated data can be displayed in different ways: refer to lines 59-61
