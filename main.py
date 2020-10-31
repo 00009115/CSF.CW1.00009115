@@ -60,7 +60,6 @@ print(tuple(week))
 # print(tuple(week))  # displays as a tuple of tuples
 # print(dict(week))   # displays as a dictionary
 
-
 #########
 
 # enumerate() is used to numerate the items of either list or tuple.
@@ -69,3 +68,18 @@ week = enumerate(days, 1)
 print(tuple(week))
 
 # enumerated data can be displayed in different ways: refer to lines 59-61
+
+#########
+
+# items() method is used to convert the dictionary into a view object with all keys and values.
+friendsAge = {
+    "Farrukh": 19,
+    "Anvar": 18,
+    "Nilufar": 20
+}
+myFriends = friendsAge.items()
+print(tuple(myFriends))
+
+# Converted data can be displayed in different ways: refer to lines 59-61
+
+
