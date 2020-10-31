@@ -46,3 +46,19 @@ countries["Kazakhstan"]["capital"] = "Nur-Sultan"
 print("I want to travel France, which is located in " + countries["France"]["continent"])
 print("I am going to reach " + countries["France"]["capital"] + " on " + days[3] + " on an " + transports[0])
 
+#########
+
+# zip() can be used to merge items of two different lists or tuples according to their index.
+# since dictionaries do not have index but key, they cannot be merged using this function.
+numbers = [1, 2, 3, 4, 5, 6, 7]
+
+week = zip(days, numbers)
+print(tuple(week))
+
+# zipped data can be displayed in different ways:
+# print(list(week))   # displays as a list of tuples
+# print(tuple(week))  # displays as a tuple of tuples
+# print(dict(week))   # displays as a dictionary
+
+
+
