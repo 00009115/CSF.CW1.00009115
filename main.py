@@ -50,15 +50,13 @@ print("I am going to reach " + countries["France"]["capital"] + " on " + days[3]
 
 # zip() can be used to merge items of two different lists or tuples according to their index.
 # since dictionaries do not have index but key, they cannot be merged using this function.
-numbers = [1, 2, 3, 4, 5, 6, 7]
+isDayOff = [True, True, True, True, True, False, False]
 
-week = zip(days, numbers)
-print(tuple(week))
+week = zip(days, isDayOff)
+print(dict(week))
 
 # zipped data can be displayed in different ways:
 # print(list(week))   # displays as a list of tuples
 # print(tuple(week))  # displays as a tuple of tuples
 # print(dict(week))   # displays as a dictionary
-
-
 
