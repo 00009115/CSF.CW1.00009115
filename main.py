@@ -40,4 +40,9 @@ countries = {
 # ALl data type can contain another data type which is shown in the "countries" dictionary. Each values can be edited.
 countries["Kazakhstan"]["capital"] = "Nur-Sultan"
 
+#########
+
+# We can always access the information inside these data types.
+print("I want to travel France, which is located in " + countries["France"]["continent"])
+print("I am going to reach " + countries["France"]["capital"] + " on " + days[3] + " on an " + transports[0])
 
