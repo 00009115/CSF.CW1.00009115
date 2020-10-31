@@ -44,7 +44,7 @@ countries["Kazakhstan"]["capital"] = "Nur-Sultan"
 
 # We can always access the information inside these data types.
 print("I want to travel France, which is located in " + countries["France"]["continent"])
-print("I am going to reach " + countries["France"]["capital"] + " on " + days[3] + " on an " + transports[0])
+print("I am going to reach " + countries["France"]["capital"] + " on " + days[3] + " on an " + transports[0] + "\n")
 
 #########
 
@@ -53,7 +53,7 @@ print("I am going to reach " + countries["France"]["capital"] + " on " + days[3]
 isDayOff = [True, True, True, True, True, False, False]
 
 week = zip(days, isDayOff)
-print(tuple(week))
+print("Output with zip:", tuple(week), "\n")
 
 # zipped data can be displayed in different ways:
 # print(list(week))   # displays as a list of tuples
@@ -65,7 +65,7 @@ print(tuple(week))
 # enumerate() is used to numerate the items of either list or tuple.
 # Starting number can be assigned as a second argument.
 week = enumerate(days, 1)
-print(tuple(week))
+print("Output with enumerate:", tuple(week), "\n")
 
 # enumerated data can be displayed in different ways: refer to lines 59-61
 
@@ -78,7 +78,7 @@ friendsAge = {
     "Nilufar": 20
 }
 myFriends = friendsAge.items()
-print(tuple(myFriends))
+print("Output with items:", tuple(myFriends), "\n")
 
 # Converted data can be displayed in different ways: refer to lines 59-61
 
