@@ -1,0 +1,12 @@
+>> Zipping:
+>> Canada is located in North America and its capital is Ottawa
+>> France is located in Europe and its capital is Paris
+>> Kazakhstan is located in Asia and its capital is Nur-Sultan
+>> Russia is located in Asia and Europe and its capital is Moscow
+>>
+>> Enumerating:
+>> 1) Ottawa, Canada, North America
+>> 2) Paris, France, Europe
+>> 3) Nur-Sultan, Kazakhstan, Asia
+>> 4) Moscow, Russia, Asia / Europe
+
