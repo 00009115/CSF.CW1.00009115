@@ -7,10 +7,13 @@ weekends = ("Saturday", "Sunday")
 # E.g. as working days and weekend days are 5 and 2, these tuples should not be updated. They can be added.
 days = weekdays + weekends
 
+# ZIPPING
+
 # zip() can be used to merge items of two tuples according to their index.
 isDayOff = [True, True, True, True, True, False, False]
 week = tuple(zip(days, isDayOff))
 
+# Using the data we reproduced above:
 print("\nZipping:")
 
 for x in week:
@@ -19,10 +22,13 @@ for x in week:
     else:     # Else case of True is False, which makes writing elif statement unnecessary
         print(x[0] + " - day off")
 
-# We can set index numbers to the each item of tuples using enumerate() function
+# ENUMERATING
 
-print("\nEnumerating:")
+# We can numerate the each item of tuples using enumerate() function
 ordered_days = tuple(enumerate(days, 1))  # Second parameter sets the starting point of enumerating.
+
+# Using the data we reproduced above:
+print("\nEnumerating:")
 
 for day in ordered_days:
     print(str(day[0]) + ")", day[1])
