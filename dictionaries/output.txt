@@ -1,12 +1,30 @@
->> Zipping:
->> Canada is located in North America and its capital is Ottawa
->> France is located in Europe and its capital is Paris
->> Kazakhstan is located in Asia and its capital is Nur-Sultan
->> Russia is located in Asia and Europe and its capital is Moscow
->>
->> Enumerating:
->> 1) Ottawa, Canada, North America
->> 2) Paris, France, Europe
->> 3) Nur-Sultan, Kazakhstan, Asia
->> 4) Moscow, Russia, Asia / Europe
-
+>> DICTIONARY DATA TYPE
+>> --------------
+>> 	
+>> Do you want to get information about any country? [Type yes/no]: yes
+>> Available countries:
+>>  1) Canada
+>>  2) France
+>>  3) Kazakhstan
+>>  4) Russia
+>> Insert the name of the country: Uzbekistan
+>> 
+>> !!! Please, choose an available country!
+>> 
+>> Do you want to get information about any country? [Type yes/no]: Yes
+>> Available countries:
+>>  1) Canada
+>>  2) France
+>>  3) Kazakhstan
+>>  4) Russia
+>> Insert the name of the country: Russia
+>> 
+>>  Russia is situated in Asia and Europe. Its capital city is Moscow.
+>> --------------
+>> 
+>> Do you want to get information about any country? [Type yes/no]: no
+>> --------------
+>> 
+>>  Thank you for using this app! Good bye!
+>> 	
+>> Process finished with exit code 0
