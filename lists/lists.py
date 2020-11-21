@@ -82,7 +82,7 @@ def remove_transport():   # receives an integer as an index
 remove_transport()   # calling the function to remove an existing transport
 
 
-# Zipping
+# Check the type of the transport
 # zip() can be used to merge relative items of two lists according to their index.
 
 def check_transport():
