@@ -56,8 +56,8 @@ def remove_transport():   # receives an integer as an index
     if message == "yes":
         print("You have the transports below:")
 
-        for i, t in enumerate(transports, 1):
-            print("", str(i) + ")", t)
+        for number, transport in enumerate(transports, 1):
+            print("", str(number) + ")", transport)
 
         removing_index = input("Insert the number of the transport you want to delete: ")
 
@@ -95,8 +95,8 @@ def check_transport():
     if message == "yes":
         print("Choose a transport to check:")
 
-        for i, t in enumerate(transports, 1):
-            print("", str(i) + ")", t)
+        for number, transport in enumerate(transports, 1):
+            print("", str(number) + ")", transport)
 
         checking_index = input("Insert the number of the transport you want to check: ")
 
@@ -106,7 +106,7 @@ def check_transport():
             print("--------------\n")  # for formatting, keeping the output in order and clean
             check_transport()
         except ValueError:
-            print("!!! Please, insert only numbers!")
+            print("\n!!! Please, insert only numbers!\n")
             check_transport()
     elif message == "no":
         print("--------------\n")  # for formatting, keeping the output in order and clean
