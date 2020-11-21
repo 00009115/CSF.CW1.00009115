@@ -1,15 +1,47 @@
->> Zipping:
->> airplane - air
->> train - ground
->> car - ground
->> bus - ground
->> ferry - water
->> helicopter - air
->>
->> Enumerating:
->> 1) airplane
->> 2) train
->> 3) car
->> 4) bus
->> 5) ferry
->> 6) helicopter
+>> LIST DATA TYPE
+>> --------------
+>> 	
+>> Do you want to ADD a new transport? [Type yes/no]: abc
+>> 	
+>> !!! Please, answer properly
+>> 	
+>> Do you want to ADD a new transport? [Type yes/no]: Yes
+>>  Insert the transport name: train
+>>  Insert the transportation mode: railway
+>> 	
+>> Successfully added!
+>> --------------
+>> 	
+>> Do you want to ADD a new transport? [Type yes/no]: No
+>> --------------
+>> 	
+>> Do you want to REMOVE any transport? [Type yes/no]: yes
+>> You have the transports below:
+>>  1) airplane
+>>  2) car
+>>  3) ferry
+>>  4) train
+>> Insert the number of the transport you want to delete: 3
+>> 	
+>> Successfully removed!
+>> --------------
+>> 	
+>> Do you want to REMOVE any transport? [Type yes/no]: no
+>> --------------
+>> 	
+>> Do you want to CHECK the mode of any transport? [Type yes/no]: YeS
+>> Choose a transport to check:
+>>  1) airplane
+>>  2) car
+>>  3) train
+>> Insert the number of the transport you want to check: 2
+>> 	
+>>  Car moves on the ground.
+>> --------------
+>> 	
+>> Do you want to CHECK the mode of any transport? [Type yes/no]: NO
+>> --------------
+>> 	
+>>  Thank you for using this app! Good bye!
+>> 
+>> Process finished with exit code 0
