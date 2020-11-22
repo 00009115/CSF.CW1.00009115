@@ -2,12 +2,12 @@
 transports = ["airplane", "car", "ferry"]
 modes = ["air", "ground", "water"]
 
-# Lists contain simple data (item) and can be edited after being assigned.
+# Lists contain simple data (index based item) and can be edited after being assigned.
 # E.g. as transport types are not as limited as in this list, it can be updated by adding or removing.
 
 # Let's create a couple of functions for adding and removing items, and use them.
 print("\nLIST DATA TYPE")
-print("--------------\n")   # for formatting, keeping the output in order and clean
+print("--------------\n")   # just for formatting the output in order to keep it clean
 
 
 # Adding items to the list
@@ -27,14 +27,14 @@ def add_transport():   # first parameter is for the name, second one is for the 
             add_transport()
         else:
             mode = input(" Insert the transportation mode: ")
-            transports.append(name)
+            transports.append(name)   # append() method is used to add a new item
             modes.append(mode)
 
         print("\nSuccessfully added!")
-        print("--------------\n")  # for formatting, keeping the output in order and clean
+        print("--------------\n")  # just for formatting the output in order to keep it clean
         add_transport()
     elif message == "no":
-        print("--------------\n")  # for formatting, keeping the output in order and clean
+        print("--------------\n")  # just for formatting the output in order to keep it clean
         return
     else:
         print("\n!!! Please, answer properly\n")
@@ -56,23 +56,23 @@ def remove_transport():   # receives an integer as an index
     if message == "yes":
         print("You have the transports below:")
 
-        for number, transport in enumerate(transports, 1):
+        for number, transport in enumerate(transports, 1):   # looping the enumerated list to print the items
             print("", str(number) + ")", transport)
 
         removing_index = input("Insert the number of the transport you want to delete: ")
 
-        try:
+        try:   # trying to convert the input into integer
             index = int(removing_index)
-            transports.pop(index - 1)
+            transports.pop(index - 1)   # since enumeration has started with 1, we should subtract 1
             modes.pop(index - 1)
             print("\nSuccessfully removed!")
-            print("--------------\n")  # for formatting, keeping the output in order and clean
+            print("--------------\n")  # just for formatting the output in order to keep it clean
             remove_transport()
         except ValueError:
             print("\n!!! Please, insert only numbers\n")
             remove_transport()
     elif message == "no":
-        print("--------------\n")  # for formatting, keeping the output in order and clean
+        print("--------------\n")  # just for formatting the output in order to keep it clean
         return
     else:
         print("\n!!! Please, answer properly\n")
@@ -103,13 +103,13 @@ def check_transport():
         try:
             index = int(checking_index)
             print("\n", transports[index-1][0].upper() + transports[index-1][1:], "moves on the", modes[index-1] + ".")
-            print("--------------\n")  # for formatting, keeping the output in order and clean
+            print("--------------\n")  # just for formatting the output in order to keep it clean
             check_transport()
         except ValueError:
             print("\n!!! Please, insert only numbers!\n")
             check_transport()
     elif message == "no":
-        print("--------------\n")  # for formatting, keeping the output in order and clean
+        print("--------------\n")  # just for formatting the output in order to keep it clean
         print(" Thank you for using this app! Good bye!")
         return
     else:
