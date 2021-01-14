@@ -11,12 +11,12 @@ def check_age_void(age):
         message = "You are " + str(age) + " years old, thus not eligible for the installment."
     elif age >= 18:
         message = "You are " + str(age) + " years old and eligible to receive an installment."
+    print(message)
 
 
 # Now the function above should be executed separately in order to update the message to be printed.
-
-check_age_void(16)
-print(message)
+if __name__ == '__main__':
+    check_age_void(16)
 
 # To avoid that, we can use value-returning functions which are shown below:
 
